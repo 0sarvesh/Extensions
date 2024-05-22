@@ -1,0 +1,27 @@
+{
+    "name":"Block AD pro",
+    "version":"1.0.0",
+    "manifest_version":3,
+    "description":"Block ads on any website --sarvs",
+    "action":{
+        "default_popup":"popup.html",
+        "default_icon":"logo.png"
+    },
+    "permissions":[
+        "declarativeNetRequest",
+        "activeTab"
+    ],
+    "icons":{
+       "128":"logo.png"
+    },
+    "declarative_net_request":{
+        "rule_resources":[
+            {
+                "id":"ruleset_1",
+                "enabled":true,
+                  "path":"rules.json"         
+            }
+        ]
+    }
+    
+}
